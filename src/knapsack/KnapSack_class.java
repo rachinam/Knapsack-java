@@ -75,12 +75,13 @@ public class KnapSack_class {
 //            }
 //           
 //        }
+        System.out.print("Solution :");
         int w = this.w; // 10,5
         int n = this.n; // 3,2
         while(n > 0){
             
             if(z[n][w] != z[n-1][w]){
-                System.out.print("-"+z[n][w]);
+                System.out.print(this.volum[n-1]+"-");
                 w = z[n][w] - this.volum[n-1]; // w= 10-5
                 n--;
                 
@@ -90,6 +91,7 @@ public class KnapSack_class {
             }
             
         }
+        System.out.println();
     }
     
     

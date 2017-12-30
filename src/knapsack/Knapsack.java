@@ -3,10 +3,10 @@ package knapsack;
 public class Knapsack {
     public static void main(String[] args) {
 
-        KnapSack_class k = new KnapSack_class(3, 10);
-        int val [] = {7,5,5};
+        KnapSack_class k = new KnapSack_class(4, 7);
+        int val [] = {2,3,5,2};
         
-        int volum [] = {6,5,5};
+        int volum [] = {5,8,14,5};
         
         k.setValeurs(val);
         k.setVolum(volum);
