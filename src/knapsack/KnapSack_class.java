@@ -33,7 +33,7 @@ public class KnapSack_class {
     }
     
     
-    public int[][] knapSack()
+    public void knapSack()
     {
         //int z[][] = new int[this.n+1][this.w+1];
         for (int v = 0; v < this.w; v++) {
@@ -53,11 +53,43 @@ public class KnapSack_class {
         for (int i = 0; i < z.length; i++) {
             for (int j = 0; j < z[0].length; j++) {
                 System.out.print(z[i][j]);
+                //System.out.print("("+i+","+j+")");
             }
             System.out.println();
  
         }
-        return z;
+        
+    }
+    
+    public void solition(){
+        knapSack();
+//        int sol[];
+        
+//        if(z[n][w] == z[n-1][w] ){
+//            System.out.print("ok");
+//        }else{
+//            if(z[n-1][w-this.volum[n-1]] == z[n-2][w-this.volum[n-1]] ){
+//                System.out.print("ok 2 ");
+//            }else{
+//                System.out.print("not ok 2 ");
+//            }
+//           
+//        }
+        int w = this.w; // 10,5
+        int n = this.n; // 3,2
+        while(n > 0){
+            
+            if(z[n][w] != z[n-1][w]){
+                System.out.print("-"+z[n][w]);
+                w = z[n][w] - this.volum[n-1]; // w= 10-5
+                n--;
+                
+            }else{
+                
+                n --;
+            }
+            
+        }
     }
     
     

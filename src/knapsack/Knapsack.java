@@ -10,8 +10,10 @@ public class Knapsack {
         
         k.setValeurs(val);
         k.setVolum(volum);
-        int uu [][] = k.knapSack();
+        k.solition();
        
+    
+    
        
 //        int uu[][] = new int[4][3];
 //        for (int v = 0; v < uu[0].length; v++) {
