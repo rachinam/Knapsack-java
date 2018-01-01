@@ -2,17 +2,24 @@
 package knapsack;
 public class Knapsack {
     public static void main(String[] args) {
-
-        KnapSack_class k = new KnapSack_class(4, 7);
-        int val [] = {2,3,5,2};
+        // Pièces de monnaie
+        Pièces_de_monnaie_class s = new Pièces_de_monnaie_class(3,8);
+        int Y []= {1,4,6};
+        s.setVi(Y);
+        s.aff();
+        s.solition();
         
-        int volum [] = {5,8,14,5};
-        
-        k.setValeurs(val);
-        k.setVolum(volum);
-        k.solition();
-       
-    
+////        KNAPSACK
+//        KnapSack_class k = new] KnapSack_class(4, 5);
+//        int val [] = {4,1,3,1};
+//        
+//        int volum [] = {2,1,3,2};
+//        
+//        k.setValeurs(val);
+//        k.setVolum(volum);
+//        k.solition();
+//       
+//    
     
        
 //        int uu[][] = new int[4][3];
